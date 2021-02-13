@@ -1,33 +1,40 @@
-# snkr-finder
-
-This is module to handle creation and execution of a simple tool to find similar sneakers called "Sneaker Finder". This repository is built wiht the fastai API and nbdev, and is a full refactor of a project initated as part of an Insight Data Science sprint project which was executed in keras/tensorflow.  
-
-## Objectives:
-    - learning PyTorch frameworks
-    - learn fastai api
-    - iterate on and extend simple POC "sneaker finder"
-    - experiment with nbdev
+# Project name here
+> Summary description here.
 
 
-The intention is to also make this repository the basis of the iterations of snkr-finder including:
+This file will become your README and also the index of your documentation.
 
-    - validation of results through categorization via logistic regression of latent vectors
-    - essentially identical categorizing model via transfer learning using
-        - mobile net V2
-        - resnet
-    - "snkr-gen". a sneaker automated desing tool utilizing a variational latent space representaion of sneakers to generate novel sneakers 
-        - e.g. sneaker math:   airmax + converse all star
+## Install
+
+`pip install snkr-finder`
+
+## How to use
+
+Fill me in please! Don't forget code examples:
+
+```python
+1+1
+```
 
 
-## CAVEATS:
 
-    - might change the neame to snkr-utils
-    - i like IDEs, but I also like experimentation so I'm going to immerse myself in this mode and see how it works for me.
+
+    2
+
+
+
+```python
+get_mnetV2_feature_net()
+```
+
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    <ipython-input-8-68c7d71ee1d7> in <module>
+    ----> 1 get_mnetV2_feature_net()
     
-    
-    
-## SEE ALSO:
 
-    - blog posts TBD
-    - other repositories TBD
-    - links / inspiration TBD
+    NameError: name 'get_mnetV2_feature_net' is not defined
+
