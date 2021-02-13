@@ -1,8 +1,10 @@
-# Project name here
-> Summary description here.
+# snkr-finder
+> this repository / module are used to develop the fastai API version of Sneaker Finder:  a tool to help find sneakers similar to what you like!
 
 
-This file will become your README and also the index of your documentation.
+WARNING!!!  WORK IN PROGRESS.. PROCEED WITH EXTREME CAUTION 
+
+- Andy 13Feb, 2021
 
 ## Install
 
@@ -10,10 +12,19 @@ This file will become your README and also the index of your documentation.
 
 ## How to use
 
-Fill me in please! Don't forget code examples:
+There are several sets of tools:
+
+- data ingestion / setup
+- feature extraction
+- "similarity" finding
+- visualization
+- widget/GUI
+- transfer learning  (modeling)
+- CVAE models to learn a compact latent space representaiton of sneakers for use in recommenders or generative design tools (snkr-math)
 
 ```python
-1+1
+
+
 ```
 
 
@@ -24,17 +35,17 @@ Fill me in please! Don't forget code examples:
 
 
 ```python
-get_mnetV2_feature_net()
+from sneakerfinder.core import *
 ```
 
 
     ---------------------------------------------------------------------------
 
-    NameError                                 Traceback (most recent call last)
+    ModuleNotFoundError                       Traceback (most recent call last)
 
-    <ipython-input-8-68c7d71ee1d7> in <module>
-    ----> 1 get_mnetV2_feature_net()
+    <ipython-input-11-93572df217e1> in <module>
+    ----> 1 from sneakerfinder.core import *
     
 
-    NameError: name 'get_mnetV2_feature_net' is not defined
+    ModuleNotFoundError: No module named 'sneakerfinder'
 
