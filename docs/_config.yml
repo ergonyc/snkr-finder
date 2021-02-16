@@ -1,4 +1,4 @@
-baseurl: /snkrfinder/
+baseurl: /snkr-finder/
 collections:
   tooltips:
     output: false
