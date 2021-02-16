@@ -13,11 +13,14 @@ entries:
       title: snkrfinder
       url: /core
     - output: web,pdf
-      title: Sneaker Finder development notebook
+      title: 'Sneaker Finder: data module- import'
       url: /data
     - output: web,pdf
-      title: 'Sneaker Finder '
-      url: /mnetv2_feats
+      title: 'Sneaker Finder: model module- MobileNet_v2 feature extractor'
+      url: /feats_model
+    - output: web,pdf
+      title: 'Sneaker Finder: model module- ResNet and expanded modeling'
+      url: /ResNet_model
     output: web
     title: snkrfinder
   output: web

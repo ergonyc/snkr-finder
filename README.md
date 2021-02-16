@@ -29,6 +29,9 @@ which makes teh snkrfinder module...
 - snkrfinder.viz -> snkrfinder.viz
 
 
+
+NOTE:  symbolic link in the nbs directory to enable the module loads in these notebooks.  i.e. `ln -s ../snkrfinder/ snkrfinder`
+
 ## How to use
 
 There are several sets of tools:
