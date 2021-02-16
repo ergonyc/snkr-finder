@@ -40,9 +40,10 @@ plugins:
 - jekyll-remote-theme
 port: 4000
 remote_theme: fastai/nbdev-jekyll-theme
-repository: ergonyc/snkrfinder
+repository: ergonyc/snkr-finder
 sidebars:
 - home_sidebar
 site_title: snkrfinder
 topnav_title: snkrfinder
 use_math: true
+twitter_username: ergonyc

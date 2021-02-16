@@ -2,8 +2,7 @@
   "snkrfinder": {
     "Overview": "/",
     "snkrfinder": "/core",
-    "Sneaker Finder: data module- import": "/data",
-    "Sneaker Finder: model module- MobileNet_v2 feature extractor": "/feats_model",
-    "Sneaker Finder: model module- ResNet and expanded modeling": "/ResNet_model"
+    "snkrfinder.data a": "/data",
+    "first snkrfinder.model a": "/model"
   }
 }

@@ -9,7 +9,6 @@ from .imports import *
 
 
 # Cell
-
 def get_home():
     return Path().home()
 
