@@ -11,7 +11,13 @@ entries:
       url: /
     - output: web,pdf
       title: snkrfinder
-      url: core.html
+      url: /core
+    - output: web,pdf
+      title: Sneaker Finder development notebook
+      url: /data
+    - output: web,pdf
+      title: 'Sneaker Finder '
+      url: /mnetv2_feats
     output: web
     title: snkrfinder
   output: web

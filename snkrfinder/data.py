@@ -5,6 +5,11 @@ __all__ = ['get_zappos_db', 'DB_PATH', 'read_zappos_meta', 'simplify_zappos_db',
            'ZAPPOS_FEATS_MD', 'creat_full_local_categorydirs', 'create_test_train_directories']
 
 # Cell
+from .imports import *
+from .core import *
+import scipy.io as sio
+
+# Cell
 
 DB_PATH = "../../Projects/DATABASE"
 
@@ -148,6 +153,19 @@ def skl_tt_split(df):
     df.loc[x_val,'validate'] = True
     df.loc[x_test,'t_t_v'] = 'test'
     df.loc[x_val,'t_t_v'] = 'valid'
+
+
+
+# Cell
+from .imports import *
+from .core import *
+
+### might be fastai wrappers to do this elegantly... (untar_data?)
+import os
+from glob import iglob
+from os.path import join,basename
+import shutil
+import random
 
 
 

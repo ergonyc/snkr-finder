@@ -1,6 +1,8 @@
 {
   "snkrfinder": {
     "Overview": "/",
-    "snkrfinder": "core.html"
+    "snkrfinder": "/core",
+    "Sneaker Finder development notebook": "/data",
+    "Sneaker Finder ": "/mnetv2_feats"
   }
 }
