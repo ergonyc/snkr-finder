@@ -19,7 +19,7 @@ L_ROOT = get_home()/'Projects/Project2.0/snkr-finder'
 D_ROOT = get_home()/'Projects/DATABASE'
 
 
-DBS = {"zappos": "/ut-zap50k-images",
+DBS = {"zappos": "ut-zap50k-images",
       "sns": "scraped/sns/im",
       "goat": "scraped/goat/im"}
 
