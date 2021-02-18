@@ -2,7 +2,9 @@
   "snkrfinder": {
     "Overview": "/",
     "snkrfinder": "/core",
-    "snkrfinder.data a": "/data",
-    "first snkrfinder.model a": "/model"
+    "snkrfinder.data a": "/zappos_data",
+    "Scrapted database: GOAT + SNS": "/scraped_data",
+    "first snkrfinder.model a": "/model",
+    "first snkrfinder.cvae a": "/cvae"
   }
 }

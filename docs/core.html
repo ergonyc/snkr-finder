@@ -37,19 +37,12 @@ nb_path: "nbs/00_core.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="What-do-we-need-in-this-?">What do we need in this ?<a class="anchor-link" href="#What-do-we-need-in-this-?"> </a></h2><ul>
-<li>pretrained architectures<ul>
-<li>mobilenet v2 (from torchvision)</li>
-<li>resnet (xresnet, from fastai)</li>
-</ul>
-</li>
-</ul>
+<h3 id="What-do-we-need-in-this-?">What do we need in this ?<a class="anchor-link" href="#What-do-we-need-in-this-?"> </a></h3><p>core module:</p>
 <ul>
-<li>feature extractor<ul>
-<li>headless model with "Identity" output</li>
+<li>define constants and data-structues</li>
+<li>mostly configurations and filesystem handlers</li>
 </ul>
-</li>
-</ul>
+<p>data module:</p>
 <ul>
 <li><p>data handling</p>
 <ul>
@@ -71,11 +64,45 @@ nb_path: "nbs/00_core.ipynb"
 </li>
 </ul>
 </li>
-<li>datacleaner GUI</li>
 </ul>
 </li>
-<li><p>visualization</p>
+</ul>
+<p>model module:</p>
 <ul>
+<li><p>pretrained architectures</p>
+<ul>
+<li>mobilenet v2 (from torchvision)</li>
+<li>resnet (xresnet, from fastai)</li>
+</ul>
+</li>
+<li><p>feature extractor</p>
+<ul>
+<li>headless model with "Identity" output</li>
+</ul>
+</li>
+<li><p>wiget tools (possibly move to sub-module?)</p>
+<ul>
+<li>following the fastai wiget model</li>
+<li>make some classes </li>
+<li>datacleaner GUI (WIP)</li>
+</ul>
+</li>
+</ul>
+<p>VAE module:</p>
+<ul>
+<li>VAE datablocks</li>
+<li>models</li>
+<li>callbacks</li>
+<li>learner hacks</li>
+<li>TODO:<ul>
+<li>AE version</li>
+<li>CVAE vs VAE</li>
+</ul>
+</li>
+</ul>
+<p>etc?</p>
+<ul>
+<li>visualization<ul>
 <li>embeddings<ul>
 <li>umap (replace tsne)</li>
 </ul>
@@ -84,22 +111,6 @@ nb_path: "nbs/00_core.ipynb"
 </ul>
 </li>
 </ul>
-<ul>
-<li>find "similar" via knn from scikit learn</li>
-</ul>
-<p>GUI</p>
-
-<pre><code>- following the fastai wiget model
-- make some classes 
-    - da
-
-</code></pre>
-<p>EXTENSION
-    MODELS
-        -categorizers
-    AE
-    VAE
-    CVAE</p>
 
 </div>
 </div>
@@ -122,7 +133,7 @@ nb_path: "nbs/00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_home" class="doc_header"><code>get_home</code><a href="https://github.com/ergonyc/snkr-finder/tree/mastersnkrfinder/core.py#L12" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_home</code>()</p>
+<h4 id="get_home" class="doc_header"><code>get_home</code><a href="https://github.com/ergonyc/snkr-finder/tree/mastersnkrfinder/core.py#L13" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_home</code>()</p>
 </blockquote>
 
 </div>
@@ -181,9 +192,10 @@ nb_path: "nbs/00_core.ipynb"
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Converted 00_core.ipynb.
-Converted 01_data.ipynb.
-Converted 02a_model.ipynb.
-Converted 03_model.ipynb.
+Converted 01a_zappos_data.ipynb.
+Converted 01b_scraped_data.ipynb.
+Converted 02_model.ipynb.
+Converted 03a_cvae.ipynb.
 Converted index.ipynb.
 </pre>
 </div>

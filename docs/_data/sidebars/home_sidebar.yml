@@ -14,10 +14,16 @@ entries:
       url: /core
     - output: web,pdf
       title: snkrfinder.data a
-      url: /data
+      url: /zappos_data
+    - output: web,pdf
+      title: 'Scrapted database: GOAT + SNS'
+      url: /scraped_data
     - output: web,pdf
       title: first snkrfinder.model a
       url: /model
+    - output: web,pdf
+      title: first snkrfinder.cvae a
+      url: /cvae
     output: web
     title: snkrfinder
   output: web
