@@ -75,7 +75,7 @@ nb_path: "nbs/01a_zappos_data.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_zappos_db" class="doc_header"><code>get_zappos_db</code><a href="https://github.com/ergonyc/snkr-finder/tree/mastersnkrfinder/data.py#L19" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_zappos_db</code>()</p>
+<h4 id="get_zappos_db" class="doc_header"><code>get_zappos_db</code><a href="https://github.com/ergonyc/snkr-finder/tree/mastersnkrfinder/data.py#L22" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_zappos_db</code>()</p>
 </blockquote>
 
 </div>
@@ -117,7 +117,7 @@ nb_path: "nbs/01a_zappos_data.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="read_zappos_meta" class="doc_header"><code>read_zappos_meta</code><a href="https://github.com/ergonyc/snkr-finder/tree/mastersnkrfinder/data.py#L33" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>read_zappos_meta</code>(<strong><code>path_meta</code></strong>)</p>
+<h4 id="read_zappos_meta" class="doc_header"><code>read_zappos_meta</code><a href="https://github.com/ergonyc/snkr-finder/tree/mastersnkrfinder/data.py#L36" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>read_zappos_meta</code>(<strong><code>path_meta</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -218,7 +218,7 @@ SNEAKERS
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="simplify_zappos_db" class="doc_header"><code>simplify_zappos_db</code><a href="https://github.com/ergonyc/snkr-finder/tree/mastersnkrfinder/data.py#L63" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>simplify_zappos_db</code>(<strong><code>df</code></strong>)</p>
+<h4 id="simplify_zappos_db" class="doc_header"><code>simplify_zappos_db</code><a href="https://github.com/ergonyc/snkr-finder/tree/mastersnkrfinder/data.py#L66" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>simplify_zappos_db</code>(<strong><code>df</code></strong>)</p>
 </blockquote>
 <p>simplifies the db (df)</p>
 
@@ -469,9 +469,9 @@ SNEAKERS
 <pre>Int64Index([    0,     1,     2,     3,     4,     9,    10,    11,    12,
                13,
             ...
-            50015, 50016, 50017, 50018, 50019, 50020, 50021, 50022, 50023,
+            50006, 50007, 50008, 50009, 50010, 50012, 50013, 50017, 50018,
             50024],
-           dtype=&#39;int64&#39;, length=33229)</pre>
+           dtype=&#39;int64&#39;, length=27614)</pre>
 </div>
 
 </div>
@@ -516,6 +516,144 @@ SNEAKERS
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="pickle-the-dataframes">pickle the dataframes<a class="anchor-link" href="#pickle-the-dataframes"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CID</th>
+      <th>Category</th>
+      <th>path</th>
+      <th>path_and_file</th>
+      <th>Category1</th>
+      <th>Category2</th>
+      <th>Filename</th>
+      <th>Sneakers</th>
+      <th>Boots</th>
+      <th>Shoes</th>
+      <th>Slippers</th>
+      <th>Adult</th>
+      <th>Gender</th>
+      <th>train</th>
+      <th>test</th>
+      <th>validate</th>
+      <th>t_t_v</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>7965307-5291</td>
+      <td>Boots</td>
+      <td>Boots/Ankle/A. Testoni/7965307.5291.jpg</td>
+      <td>[Boots, Ankle, A. Testoni, 7965307.5291.jpg]</td>
+      <td>Boots</td>
+      <td>Ankle</td>
+      <td>7965307.5291.jpg</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>Men</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>train</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>7999255-363731</td>
+      <td>Boots</td>
+      <td>Boots/Ankle/A. Testoni/7999255.363731.jpg</td>
+      <td>[Boots, Ankle, A. Testoni, 7999255.363731.jpg]</td>
+      <td>Boots</td>
+      <td>Ankle</td>
+      <td>7999255.363731.jpg</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>Men</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>train</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>8000978-364150</td>
+      <td>Boots</td>
+      <td>Boots/Ankle/A. Testoni/8000978.364150.jpg</td>
+      <td>[Boots, Ankle, A. Testoni, 8000978.364150.jpg]</td>
+      <td>Boots</td>
+      <td>Ankle</td>
+      <td>8000978.364150.jpg</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>Men</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>test</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 
 </div>
@@ -523,7 +661,7 @@ SNEAKERS
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="pickle-the-dataframe">pickle the dataframe<a class="anchor-link" href="#pickle-the-dataframe"> </a></h2>
+<h2 id="unpickle-the-dataframe">unpickle the dataframe<a class="anchor-link" href="#unpickle-the-dataframe"> </a></h2>
 </div>
 </div>
 </div>
