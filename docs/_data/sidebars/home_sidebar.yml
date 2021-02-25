@@ -22,8 +22,14 @@ entries:
       title: first snkrfinder.model a
       url: /model
     - output: web,pdf
-      title: first snkrfinder.cvae a
-      url: /cvae
+      title: first snkrfinder.model b
+      url: /transferlearning_model
+    - output: web,pdf
+      title: first snkrfinder.cvae b
+      url: /latenttarget_cvae
+    - output: web,pdf
+      title: first snkrfinder.widgets
+      url: /widgets
     output: web
     title: snkrfinder
   output: web
