@@ -1,0 +1,12 @@
+{
+  "snkrfinder": {
+    "Overview": "/",
+    "snkrfinder": "/core",
+    "snkrfinder.data a": "/zappos_data",
+    "Scrapted database: GOAT + SNS": "/scraped_data",
+    "first snkrfinder.model a": "/model",
+    "first snkrfinder.model b": "/transferlearning_model",
+    "first snkrfinder.cvae b": "/latenttarget_cvae",
+    "first snkrfinder.widgets": "/widgets"
+  }
+}
