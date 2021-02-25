@@ -13,17 +13,17 @@ entries:
       title: snkrfinder
       url: /core
     - output: web,pdf
-      title: snkrfinder.data a
-      url: /zappos_data
+      title: snkrfinder.data.zappos
+      url: /data.zappos
     - output: web,pdf
-      title: 'Scrapted database: GOAT + SNS'
-      url: /scraped_data
+      title: snkrfinder.data.scraped
+      url: /data.scraped
     - output: web,pdf
-      title: first snkrfinder.model a
-      url: /model
+      title: first snkrfinder.model.core
+      url: /model.core
     - output: web,pdf
-      title: first snkrfinder.model b
-      url: /transferlearning_model
+      title: first snkrfinder.model.transfer
+      url: /model.transfer
     - output: web,pdf
       title: first snkrfinder.cvae b
       url: /latenttarget_cvae

@@ -37,26 +37,19 @@ nb_path: "nbs/00_core.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="What-do-we-need-in-this-?">What do we need in this ?<a class="anchor-link" href="#What-do-we-need-in-this-?"> </a></h3><p>core module:</p>
-<ul>
-<li>define constants and data-structues</li>
-<li>mostly configurations and filesystem handlers</li>
-</ul>
-<p>data module:</p>
-<ul>
-<li><p>data handling</p>
-<ul>
-<li><p>pack into dataframe</p>
-</li>
-<li><p>sort files into:</p>
-<ul>
-<li>train / validate / test?</li>
-<li>category</li>
+<h2 id="structure">structure<a class="anchor-link" href="#structure"> </a></h2><h3 id="core-module:">core module:<a class="anchor-link" href="#core-module:"> </a></h3><ul>
+<li>constants and data-structues</li>
+<li>configurations</li>
+<li>helper functions / utilities<ul>
+<li>e.g. pickle convenience fns</li>
 </ul>
 </li>
-<li><p>munging and cleaning and merging</p>
-<ul>
-<li>zappos 50 k</li>
+</ul>
+<h3 id="data-module:">data module:<a class="anchor-link" href="#data-module:"> </a></h3><ul>
+<li>data handling<ul>
+<li>download / locate</li>
+<li>munging and cleaning and merging<ul>
+<li>zappos 50 k - matlab imports !?!</li>
 <li>scraped data<ul>
 <li>goat</li>
 <li>sns</li>
@@ -64,33 +57,50 @@ nb_path: "nbs/00_core.ipynb"
 </li>
 </ul>
 </li>
+<li>load into dataframe<ul>
+<li>train / validate / test</li>
+<li>categories</li>
 </ul>
 </li>
 </ul>
-<p>model module:</p>
-<ul>
+</li>
+</ul>
+<h3 id="model-module:">model module:<a class="anchor-link" href="#model-module:"> </a></h3><ul>
 <li><p>pretrained architectures</p>
 <ul>
 <li>mobilenet v2 (from torchvision)</li>
-<li>resnet (xresnet, from fastai)</li>
+<li>resnets (resnets for torchvision, xresnet, from fastai)</li>
+<li>TBD vgg, etc.?</li>
 </ul>
 </li>
 <li><p>feature extractor</p>
 <ul>
-<li>headless model with "Identity" output</li>
+<li>tools to separate "body" from classifying "head" <ul>
+<li>where? aka "cut" or "split"</li>
+<li>pooling <ul>
+<li>fastai max + average pooling across spatial dimension</li>
 </ul>
 </li>
-<li><p>wiget tools (possibly move to sub-module?)</p>
+</ul>
+</li>
+<li>eval mode, turn off trainable params</li>
+</ul>
+</li>
+<li><p>light visualization / plotting</p>
+</li>
+<li><p>UMAP</p>
+</li>
+<li><p>wiget tools</p>
 <ul>
+<li>instantiate Sneaker Finder 2.0</li>
 <li>following the fastai wiget model</li>
-<li>make some classes </li>
 <li>datacleaner GUI (WIP)</li>
+<li>latent explorer (WIP)</li>
 </ul>
 </li>
 </ul>
-<p>VAE module:</p>
-<ul>
-<li>VAE datablocks</li>
+<h3 id="CVAE-module:">CVAE module:<a class="anchor-link" href="#CVAE-module:"> </a></h3><ul>
+<li>VAE datablocks </li>
 <li>models</li>
 <li>callbacks</li>
 <li>learner hacks</li>
@@ -100,18 +110,11 @@ nb_path: "nbs/00_core.ipynb"
 </ul>
 </li>
 </ul>
-<p>etc?</p>
-<ul>
-<li>visualization<ul>
-<li>embeddings<ul>
-<li>umap (replace tsne)</li>
+<h3 id="extensions-(TODO,-etc)">extensions (TODO, etc)<a class="anchor-link" href="#extensions-(TODO,-etc)"> </a></h3><ul>
+<li>visualization</li>
+<li>embeddings</li>
 </ul>
-</li>
-<li>images </li>
-</ul>
-</li>
-</ul>
-
+<h2 id="constants,-structures,-functions-to-export">constants, structures, functions to export<a class="anchor-link" href="#constants,-structures,-functions-to-export"> </a></h2>
 </div>
 </div>
 </div>
@@ -244,7 +247,7 @@ nb_path: "nbs/00_core.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Export">Export<a class="anchor-link" href="#Export"> </a></h2>
+<h2 id="nbdev-lib-+-docs-export">nbdev lib + docs export<a class="anchor-link" href="#nbdev-lib-+-docs-export"> </a></h2>
 </div>
 </div>
 </div>

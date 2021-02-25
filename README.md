@@ -2,14 +2,6 @@
 > this repository / module are used to develop the fastai API version of Sneaker Finder:  a tool to help find sneakers similar to what you like!
 
 
-```python
-# #hide
-# from snkrfinder.core import * 
-# from snkrfinder.data import *
-
-
-```
-
 WARNING!!!  WORK IN PROGRESS.. PROCEED WITH EXTREME CAUTION 
 
 - Andy 13Feb, 2021
