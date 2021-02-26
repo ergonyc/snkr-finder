@@ -2,7 +2,7 @@ topnav:
 - title: Topnav
   items:
     - title: github
-      external_url: https://github.com/ergonyc/snkrfinder/tree/master/
+      external_url: https://github.com/ergonyc/snkr-finder/tree/master
 
 #Topnav dropdowns
 topnav_dropdowns:

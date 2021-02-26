@@ -36,15 +36,15 @@ There are several sets of tools:
 - transfer learning  (modeling)
 - CVAE models to learn a compact latent space representaiton of sneakers for use in recommenders or generative design tools (snkr-math)
 
-```python
+```
 from snkrfinder.core import *
 ```
 
-```python
+```
 from snkrfinder.data import *
 ```
 
-```python
+```
 from snkrfinder.model import *
 ```
 
