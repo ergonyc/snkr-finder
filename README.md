@@ -6,6 +6,10 @@ WARNING!!!  WORK IN PROGRESS.. PROCEED WITH EXTREME CAUTION
 
 - Andy 13Feb, 2021
 
+Also note that there are two versions of the repo... `snkr-finder` and `snkrfinder` which both create the snkrfinder module.
+
+Confusing, yes.  But mostly for testing and expository learning about import dependencies and nbdev automation tools.
+
 ## Install
 
 `pip install snkr-finder`
@@ -16,9 +20,9 @@ which makes teh snkrfinder module...
 
 - snkrfinder.data -> snkrfinder.data
 
-- snkrfinder.model -> snkrfinder.model
+- snkrfinder.model -> snkrfinder.model (.core .cvae .transfer)
 
-- snkrfinder.viz -> snkrfinder.viz
+- snkrfinder.widget -> snkrfinder.widget
 
 
 
@@ -36,33 +40,27 @@ There are several sets of tools:
 - transfer learning  (modeling)
 - CVAE models to learn a compact latent space representaiton of sneakers for use in recommenders or generative design tools (snkr-math)
 
-```
+```python
 from snkrfinder.core import *
 ```
 
-```
+```python
 from snkrfinder.data import *
 ```
 
+```python
+from snkrfinder.model.core import *
+from snkrfinder.model.transfer import *
+from snkrfinder.model.cvae import *
+
 ```
-from snkrfinder.model import *
+
+```python
+from snkrfinder.widgets import *
 ```
 
+```python
+# todo: fix /model/__init__.py to autoimport models modules...?
+# todo: fix /__init__.py to autoimport core module...?
 
-    Traceback (most recent call last):
-
-
-      File "/home/ergonyc/anaconda3/envs/fastai/lib/python3.8/site-packages/IPython/core/interactiveshell.py", line 3417, in run_code
-        exec(code_obj, self.user_global_ns, self.user_ns)
-
-
-      File "<ipython-input-5-3761a38ed1f5>", line 1, in <module>
-        from snkrfinder.model import *
-
-
-      File "/home/ergonyc/Projects/Project2.0/snkr-finder/nbs/snkrfinder/model.py", line 160
-        return df2
-        ^
-    SyntaxError: 'return' outside function
-
-
+```
